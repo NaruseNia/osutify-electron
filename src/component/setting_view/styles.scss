@@ -6,6 +6,58 @@
   height: 100%;
   overflow: hidden;
   z-index: 50;
+  background-color: #0000006c;
   backdrop-filter: blur(3px);
-  background-color: #2a2a2a60;
+  -webkit-app-region: no-drag;
+  .header {
+    width: 100%;
+    height: 25px;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    padding: 25px 20px;
+    z-index: 30;
+    -webkit-app-region: drag;
+    .title {
+      span {
+        font-weight: bold;
+        text-shadow: 0 0 10px #32323260;
+        background: linear-gradient(90deg, #ffd9f7, #d8ffe5);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    }
+    .nav {
+      margin-left: auto;
+      -webkit-app-region: no-drag;
+    }
+  }
+  .content {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: 30% 1fr;
+    .desc {
+      display: flex;
+      width: 100%;
+      height: 100%;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      .name {
+        font-size: 2rem;
+        font-weight: bold;
+      }
+      .version {
+        font-size: 1.2rem;
+      }
+    }
+    .settings {
+      padding: 3rem 5rem;
+      transition: 0.2s;
+      &:hover {
+        background-color: #151515be;
+      }
+    }
+  }
 }
