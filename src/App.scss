@@ -8,6 +8,9 @@
     padding: 25px 20px;
     z-index: 25;
     -webkit-app-region: drag;
+    .buttons {
+      -webkit-app-region: no-drag;
+    }
   }
   #app_container {
     width: 100%;
@@ -16,6 +19,7 @@
     display: grid;
     background-position: center;
     background-size: cover;
+    user-select: none;
 
     grid-template-columns: 1fr 1fr;
     #control_surface {
