@@ -1,9 +1,9 @@
 {
-  "name": "electron-vite-react",
-  "version": "2.2.0",
+  "name": "osutify",
+  "version": "0.0.1",
   "main": "dist-electron/main/index.js",
-  "description": "Electron Vite React boilerplate.",
-  "author": "草鞋没号 <308487730@qq.com>",
+  "description": "Beatmap music player for osu!/osu!lazer",
+  "author": "Naruse Nia",
   "license": "MIT",
   "private": true,
   "debug": {
@@ -21,6 +21,7 @@
   "dependencies": {
     "electron-updater": "^6.1.1",
     "realm": "^12.6.2",
+    "ress": "^5.0.2",
     "sass": "^1.72.0"
   },
   "devDependencies": {
