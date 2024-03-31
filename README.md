@@ -7,7 +7,7 @@ _This image is currently under development_
 
 ## Developmental status and objective
 
-- [ ] Migrate from old project
+- [x] Migrate from old project
 - [ ] Player
   - [ ] Basic Design
   - [ ] Control surface

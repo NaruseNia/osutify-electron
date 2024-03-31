@@ -1,0 +1,13 @@
+.cs_container {
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
+  height: 100%;
+  display: grid;
+  --next-up-height: 5rem;
+  grid-template-rows: 1fr var(--next-up-height);
+  .controller {
+    grid-row: 1;
+  }
+  .next_up {
+    background-color: #afa;
+  }
+}
